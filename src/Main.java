@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Main {
@@ -54,11 +55,28 @@ public class Main {
         System.out.println(mapList.keysAndValues());
         System.out.println(mapList.convertCollection());
         System.out.println("==============================================================================");
+        Map<Integer, String> map = new LinkedHashMap<>();
+        map.put(20, "map20");
+        map.put(2, "map2");
+        map.put(12, "map10");
+        map.put(16, "map14");
+        map.put(4, "map4");
+        map.put(10, "map8");
+        map.put(8, "map6");
+        map.put(14, "map12");
+        map.put(6, "map5");
+        map.put(18, "map18");
+
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+        System.out.println("==============================================================================");
         Checked.addMap("str1",2);
         Checked.addMap("str2",1);
         Checked.addMap("str1",3);
         Checked.addMap("str1",5);
         Checked.addMap("str1",5);
+        System.out.println("==============================================================================");
 
 
     }
