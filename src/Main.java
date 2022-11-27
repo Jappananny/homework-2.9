@@ -50,11 +50,16 @@ public class Main {
         fairNails.addProd(mayonese,1);
         System.out.println(fairNails.sumPricesRecipes() + " Итого сумма");
         System.out.println("==============================================================================");
+        MapList mapList = new MapList();
+        System.out.println(mapList.keysAndValues());
+        System.out.println(mapList.convertCollection());
+        System.out.println("==============================================================================");
         Checked.addMap("str1",2);
         Checked.addMap("str2",1);
         Checked.addMap("str1",3);
         Checked.addMap("str1",5);
         Checked.addMap("str1",5);
-        System.out.println();
+
+
     }
 }
